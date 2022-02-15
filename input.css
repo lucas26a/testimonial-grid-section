@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  main > div {
+    @apply rounded p-4 shadow-lg shadow-lightgray space-y-6
+  }
+  img {
+    @apply w-10 rounded-full border-2
+  }
+  span + span {
+    @apply opacity-50
+  }
+  p + p {
+    @apply opacity-70 mt-6
+  }
+  footer a {
+    @apply text-lightgrayish/70 hover:text-lightgrayish
+  }
+}
+main > div:first-of-type {
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-position: 90% 0;
+  background-repeat: no-repeat;
+}
